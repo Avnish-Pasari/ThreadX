@@ -1,22 +1,26 @@
-# csc369_a2_thread
+# 🚦 ThreadX
+A lightweight ⚡ preemptive, user-level threading library in C.
 
-A library that enables preemptive, user-level threading.
+## ✨ Features
+- 🧵 Cooperative & preemptive threading
+- 🔄 Context switching with `getcontext/setcontext` & `SIGALRM`
+- 🎛️ Thread lifecycle: create, yield, exit, join
+- ⏱️ Synchronization via wait queues & sleep/wakeup
+- 🛡️ Race-condition safety with interrupt masking
 
-## Dependencies
+## 🔨 Dependencies
 
 This repository uses CMake to configure and build each binary.
-The `teach.cs` machines have version 3.16 already installed.
-But if you are working locally, you will need to install CMake as well.
+You must have version 3.16 already installed.
 
 The library can be tested using the [Check unit testing framework](https://github.com/libcheck/check).
-The `teach.cs` machines have version 0.15.2 installed (see `https://github.com/libcheck/check`).
-If you are working locally, you will need to install this as well.
+You must have version 0.15.2 installed (see `https://github.com/libcheck/check`).
 You should build from source (it is a small library, should not take long), see the library's [CMake instructions](https://github.com/libcheck/check#installing).
 If you choose not to install Check, then (in the top-level `CMakeLists.txt`) you should comment out
 
     # add_subdirectory(tests)
 
-## Compiling
+## 🛠️ Compiling
 
 
 CMake can configure the project for different build systems and IDEs (type `cmake --help` for a list of generators available for your platform).
@@ -33,6 +37,6 @@ After the configuration step, you can ask CMake to build the project.
 	cmake --build cmake-build-release/ --target all
 	cmake --build cmake-build-debug/ --target all
 
-## Running
+## 🏃 Running
 
 If compilation was successful, you will find the compiled binaries **inside your build directory** (e.g., `cmake-build-debug`).
