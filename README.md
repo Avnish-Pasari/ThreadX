@@ -1,4 +1,4 @@
-# 🚦 ThreadX
+# 🚦 ThreadX – Lightweight Threading Library
 A lightweight ⚡ preemptive, user-level threading library in C.
 
 ## ✨ Features
